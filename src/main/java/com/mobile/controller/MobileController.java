@@ -97,4 +97,8 @@ public List<Mobile> jpqlprice(@PathVariable int m){
 public List<Mobile> jpqlpricebetrange(@PathVariable int r, @PathVariable int n){
 	return ms.jpqlpricebetrange(r,n);
 }
+@GetMapping("/github")
+public String github() {
+	return "Hi Git Hub";
+}
 }
